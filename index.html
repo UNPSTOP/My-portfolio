@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>protfolio</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .hedder_continer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #151517;
+            /* border: 2px solid red; */
+            width: 100%;
+        }
+        
+        .hedder_content {
+            margin-top: 1rem;
+            display: flex;
+            background-color: #1e2129;
+            justify-content: space-between;
+            /* flex-direction: column; */
+            /* border: 2px solid rgb(54, 10, 215); */
+            width: 80%;
+            max-width: 80%;
+            padding-bottom: 1rem;
+        }
+        
+        .right_box {
+            display: flex;
+        }
+        
+        .left_box {
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+        }
+        
+        .protfolio {
+            font-style: oblique;
+            font-size: 700;
+            font-weight: bold;
+        }
+        
+        .left_box:hover {
+            transform: rotate(20deg);
+            transition: all 0.5s ease-in-out;
+        }
+        
+        ul {
+            display: flex;
+            color: white;
+            list-style: none;
+            /* gap: 5rem; */
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        
+        li {
+            font-size: 600;
+            cursor: pointer;
+            padding: 5px;
+        }
+        
+        li:hover {
+            color: aquamarine;
+        }
+        
+        .cv_continer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #151517;
+            /* border: 2px solid red; */
+        }
+        
+        .cv_content {
+            /* margin-top: 3rem; */
+            padding: 3rem;
+            display: flex;
+            background-color: #1e2129;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 80%;
+            max-width: 80%;
+            padding-bottom: 1rem;
+            /* border: 2px solid rgb(14, 14, 157); */
+        }
+        
+        .left_box_cv {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .hello {
+            color: white;
+            font-size: larger;
+            font-weight: bolder;
+        }
+        
+        .may_name {
+            font-size: larger;
+            font-weight: bolder;
+            color: white;
+        }
+        
+        .third_hadding {
+            font-size: larger;
+            font-weight: bold;
+            color: whitesmoke;
+        }
+        
+        .third_hadding {
+            color: white;
+            font-size: larger;
+            font-weight: bold;
+        }
+        
+        .forth_hadding {
+            font-size: larger;
+            font-weight: bold;
+            color: white;
+            max-width: 34rem;
+        }
+        
+        .link_box {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .fasebook_img_box {
+            width: 2rem;
+            height: 2rem;
+            border: 2px solid cornflowerblue;
+            border-radius: 35%;
+            object-fit: cover;
+        }
+        
+        .facebook_logo {
+            border-radius: 50%;
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .fasebook_img_box:hover {
+            transform: scale(1.5);
+            border: 2px solid cornflowerblue;
+            border-radius: 35%;
+            object-fit: cover;
+            transition: all 0.5s ease-in-out;
+        }
+        
+        .download_cv {
+            color: white;
+            background-color: rgb(0, 249, 255);
+            padding: 5px;
+            border-radius: 1rem;
+            box-shadow: 1px 3px 3px 3px rgb(0, 249, 255);
+            width: 100px;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        .download_cv:hover {
+            transform: scale(1.1);
+        }
+        
+        .right_box_img {
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            /* box-shadow: 2px 0 30px #00f7ff; */
+            border-radius: 50%;
+        }
+        
+        .right_box_img {
+            width: 250px;
+            height: 290px;
+            overflow: hidden;
+            object-fit: cover;
+            position: relative;
+        }
+        
+        .about_continer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, #0d0f13, #0a585f);
+            /* border: 2px solid red; */
+        }
+        
+        .about_content {
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: space-between; */
+            gap: 3rem;
+            width: 80%;
+            background-color: #2c3241;
+            flex-direction: row;
+            max-width: 80%;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            /* border: 2px solid rgb(14, 14, 157); */
+        }
+        
+        .left_img2_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            margin-left: 3rem;
+            flex-wrap: wrap;
+            /* box-shadow: 2px 0 30px #00f7ff; */
+            border-radius: 50%;
+        }
+        
+        .paregraf_about {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 30rem;
+            color: white;
+        }
+        
+        .right_text_box {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding-top: 3rem;
+        }
+        
+        .About2 {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .frist_about_text {
+            color: white;
+            font-size: 1.5rem;
+            /* font-weight: lighter; */
+        }
+        
+        #About_hadding {
+            font-weight: bold;
+        }
+        
+        .second_text_me {
+            font-size: xx-large;
+            color: aqua;
+        }
+        
+        .me {
+            font-weight: bolder;
+        }
+        
+        .second_hedding_para {
+            font-size: large;
+            font-style: italic;
+            color: white;
+        }
+        
+        .buutun {
+            color: white;
+            background-color: rgb(0, 249, 255);
+            padding: 5px;
+            border-radius: 1rem;
+            box-shadow: 1px 3px 3px 3px rgb(0, 249, 255);
+            width: 100px;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        .services_continer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            background-color: #1e2129;
+            align-items: center;
+            /* background: linear-gradient(to bottom, #0d0f13, #0a585f); */
+            /* border: 2px solid red; */
+        }
+        
+        .top_continer {
+            margin-top: 2rem;
+            width: 80%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .card_continer {
+            margin-top: 2rem;
+            display: flex;
+            width: 80%;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            /* border: 2px solid red; */
+        }
+        
+        .para_card {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 24rem;
+            color: white;
+        }
+        
+        .card1 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 20rem;
+            gap: 1rem;
+            height: 23rem;
+            border-radius: 1rem;
+            background-color: #2c3241;
+            /* border: 2px solid rgb(0, 249, 255); */
+        }
+        
+        .firstsymbol {
+            width: 5rem;
+            object-fit: cover;
+            position: relative;
+        }
+        
+        p {
+            color: blanchedalmondd !important;
+        }
+        
+        .hedding_card {
+            color: antiquewhite;
+        }
+        
+        .bootun_card {
+            color: white;
+            background-color: rgb(0, 249, 255);
+            padding: 5px;
+            border-radius: 1rem;
+            box-shadow: 1px 3px 3px 3px rgb(0, 249, 255);
+            width: 100px;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        .card1:hover {
+            transform: scale(1.1);
+            transition: all 0.5s ease-in-out;
+            box-shadow: #48556f 0 0 30px 0;
+        }
+        
+        .project_continer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem;
+            background-color: #1e2129;
+            width: 100%;
+            flex-wrap: wrap;
+            /* border: 2px solid red; */
+        }
+        
+        .top_project_continer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .card_project_continer {
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            flex-wrap: wrap;
+            max-width: 80%;
+            width: 80%;
+            /* background-color: #48556f; */
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            /* justify-content: space-between; */
+            gap: 1rem;
+            /* border: 2px solid red; */
+        }
+        
+        .project_img img {
+            width: 19rem;
+            height: 13rem;
+            border-radius: 1rem;
+        }
+        
+        .project_img img:hover {
+            transform: scale(1.1);
+            transition: all 0.5s ease-in-out;
+            box-shadow: #48556f 0 0 30px 0;
+        }
+        
+        .last_continer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            background-color: #1e2129;
+            align-items: center;
+            gap: 1rem;
+            /* background: linear-gradient(to bottom, #0d0f13, #0a585f); */
+            /* border: 2px solid red; */
+        }
+        
+        .top_last_box {
+            color: white;
+            display: flex;
+            gap: 1rem;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        
+        .me {
+            color: aqua;
+        }
+        
+        .main_content {
+            display: grid;
+            margin-top: 1rem;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            flex-wrap: wrap;
+            /* display: flex; */
+        }
+        /* .input_continer {} */
+        
+        .input_box {
+            background: transparent;
+            /* no background */
+            border: none;
+            /* no border */
+            outline: none;
+            /* no outline when clicked */
+            color: white;
+            /* text color (you can change) */
+            font-size: 16px;
+            border-radius: 2rem;
+        }
+        
+        .button_last {
+            color: white;
+            background-color: rgb(0, 249, 255);
+            padding: 5px;
+            border-radius: 1rem;
+            box-shadow: 1px 3px 3px 3px rgb(0, 249, 255);
+            display: flex;
+            width: 100px;
+            text-align: center;
+            cursor: pointer;
+            margin-bottom: 1rem;
+            justify-content: center;
+        }
+        
+        .input_continer {
+            /* border: 2px solid red; */
+            height: 2rem;
+            border-radius: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 19rem;
+            background-color: #2c3241;
+            color: aliceblue;
+        }
+        
+        .input_continer:hover {
+            transform: scale(1.1);
+            transition: all 0.5s ease-in-out;
+            box-shadow: #48556f 0 0 30px 0;
+        }
+        
+        #masseg {
+            background: transparent;
+            /* no background */
+            border: none;
+            /* no border */
+            outline: none;
+            /* no outline when clicked */
+            color: white;
+            /* text color (you can change) */
+            /* font-size: 16px; */
+            /* border-radius: 2rem; */
+        }
+        
+        .massagecontiner {
+            background-color: #2c3241;
+            width: 25rem;
+        }
+        
+        .button1 {
+            background: transparent;
+            /* no background */
+            border: none;
+            /* no border */
+            outline: none;
+            /* no outline when clicked */
+            color: white;
+        }
+        
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #1e2129;
+            color: white;
+        }
+        
+        .footer_content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 80%;
+        }
+        
+        .right_box5 {
+            width: 2rem;
+            height: 2rem;
+        }
+        
+        #arrow {
+            width: 2rem;
+            height: 2rem;
+            background: transparent;
+            background-color: aqua;
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: all 0.5s ease-in-out;
+        }
+        
+        @media screen and (max-width: 627px) {
+            .main_content {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="hedder_continer">
+        <div class="hedder_content">
+            <div class="left_box">
+                <span id="protfolio" style="color: white;">protfolio</span>
+            </div>
+            <div class="right_box">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>protfolio</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="cv_continer">
+        <div class="cv_content">
+            <div class="left_box_cv">
+                <div class="hello">
+                    <span class="frist_hedding">
+                        Hello, It's Me
+                    </span>
+                </div>
+                <div class="may_name">
+                    <h1 class="second_hedding">
+                        Irfan Aslam
+                    </h1>
+                </div>
+                <div class="third_hadding">
+                    <p class="deploper">
+                        And I'm Frontend Developer
+                    </p>
+                </div>
+
+                <div class="forth_hadding">
+                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores quia aliquid eveniet.</p>
+
+                </div>
+                <div class="link_box">
+                    <div class="fasebook_img_box">
+                        <img src="facebook.jpeg" alt="clickfacebook" class="facebook_logo">
+                    </div>
+                    <div class="fasebook_img_box">
+                        <img src="twitter.jpeg" alt="click twiter" class="facebook_logo">
+                    </div>
+                    <div class="fasebook_img_box">
+                        <img src="instagram.jpeg" alt="click instagram" class="facebook_logo">
+                    </div>
+                    <div class="fasebook_img_box">
+                        <img src="linkdin.jpeg" alt="click likding" class="facebook_logo">
+                    </div>
+                </div>
+                <div class="download_cv">
+                    download cv
+                </div>
+            </div>
+            <div class="right_box_img">
+                <img class="may img" src="Screenshot 2025-04-26 153302.png" alt="click">
+            </div>
+        </div>
+    </div>
+    <div class="about_continer">
+        <div class="about_content">
+            <div class="left_img2_box">
+                <img class="left_img" src="Screenshot 2025-04-26 153302.png" alt="cliack">
+            </div>
+            <div class="right_text_box">
+                <div class="About2">
+                    <div class="frist_about_text">
+                        <h1 id="About_hadding">About</h1>
+                    </div>
+                    <div class="second_text_me">
+                        <p class="me">Me</p>
+                    </div>
+                </div>
+                <div class="second_hedding_para">
+                    <h2 id="para_hadding">frontend developer</h2>
+                </div>
+                <div class="paregraf_about">
+                    <p class="lorem40">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas nesciunt delectus optio eaque omnis, illo deserunt autem excepturi blanditiis harum culpa ullam nemo vel inventore sint labore repellendus consectetur, quo debitis
+                        itaque quibusdam cumque ipsam consectetur?</p>
+
+                </div>
+                <div class="buutun">
+                    Read More
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services_continer">
+        <div class="top_continer">
+            <div class="our">
+                our
+            </div>
+            <div class="ser" style="color: rgb(0, 249, 255);">
+                Services
+            </div>
+        </div>
+        <div class="card_continer">
+            <div class="card1">
+                <div class="symbol">
+                    <img class="firstsymbol" src="first.jpeg" alt="click">
+                </div>
+                <div class="hedding_card">
+                    <h1>web Developer</h1>
+                </div>
+                <div class="para_card">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque aperiam animi voluptates quia necessitatibus, vitae similique sapiente nihil at autem nesciunt? Repudiandae quis nisi laborum.</p>
+
+                </div>
+                <div class="bootun_card">
+                    read More
+                </div>
+            </div>
+            <div class="card1">
+                <div class="symbol">
+                    <img class="firstsymbol" src="second.jpeg" alt="">
+                </div>
+                <div class="hedding_card">
+                    <h1>web Developer</h1>
+                </div>
+                <div class="para_card">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque aperiam animi voluptates quia necessitatibus, vitae similique sapiente nihil at autem nesciunt? Repudiandae quis nisi laborum.</p>
+
+                </div>
+                <div class="bootun_card">
+                    read More
+                </div>
+            </div>
+            <div class="card1">
+                <div class="symbol">
+                    <img class="firstsymbol" src="third.png" alt="">
+                </div>
+                <div class="hedding_card">
+                    <h1>web Developer</h1>
+                </div>
+                <div class="para_card">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque aperiam animi voluptates quia necessitatibus, vitae similique sapiente nihil at autem nesciunt? Repudiandae quis nisi laborum.</p>
+
+                </div>
+                <div class="bootun_card">
+                    read More
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project_continer">
+        <div class="top_project_continer">
+            <div class="Latest">
+                Latest
+            </div>
+            <div class="project" style="color: aqua;">
+                Project
+            </div>
+        </div>
+        <div class="card_project_continer">
+            <div class="project_img">
+                <img src="project1.jpeg" alt="click">
+            </div>
+            <div class="project_img">
+                <img src="project2.jpeg" alt="click">
+            </div>
+            <div class="project_img">
+                <img src="project3.jpeg" alt="click">
+            </div>
+            <div class="project_img">
+                <img src="project4.jpeg" alt="click">
+            </div>
+            <div class="project_img">
+                <img src="project5.jpeg" alt="click">
+            </div>
+            <div class="project_img">
+                <img src="project6.jpeg" alt="click">
+            </div>
+        </div>
+    </div>
+    <div class="last_continer">
+        <div class="top_last_box">
+            <div class="contact">
+                Contact
+            </div>
+            <div class="me">
+                Me
+            </div>
+        </div>
+        <div class="main_content">
+            <div class="input_continer">
+                <input type="text" placeholder="Enter Your Name" class="input_box">
+            </div>
+            <div class="input_continer">
+                <input type="text" placeholder="Enter Your email" class="input_box">
+            </div>
+            <div class="input_continer">
+                <input type="number" placeholder="Enter Your number" class="input_box">
+            </div>
+            <div class="input_continer">
+                <input type="text" placeholder="Enter Your nickname" class="input_box">
+            </div>
+        </div>
+        <div class="massagecontiner">
+            <textarea name="" id="masseg" cols="45" rows="10" placeholder="Enter Your Massage" id=""></textarea>
+        </div>
+        <div class="button_last">
+            <input type="submit" value="Send" class="button1">
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_content">
+            <div class="left_box3">
+                Lorem ipsum dolor sit amet consectetur
+            </div>
+            <div class="right_box5">
+                <button id="arrow">-></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
